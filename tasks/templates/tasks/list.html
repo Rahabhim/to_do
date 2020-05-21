@@ -54,14 +54,10 @@ bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQ
     {% csrf_token %}
     {{form.title}}
     <input class="btn btn-info" type="submit" name="Create Task">
-
   </form>
 
 
   <div class="todo-list">
-
-
-
   {% for task in tasks %}
     <div class="item-row">
       <a class="btn btn-sm btn-info" href="{% url 'update_task' task.id %}">Update</a>
@@ -72,7 +68,6 @@ bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQ
       {% else %}
       <span>{{task}}</span>
       {% endif %}
-
     </div>
   {% endfor %}
   </div>
