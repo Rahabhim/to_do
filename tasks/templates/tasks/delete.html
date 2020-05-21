@@ -8,8 +8,8 @@ bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQ
     }
 
     input{
-      width: 12%;
-      padding: 12px 20px;
+      width: 15%;
+      padding: 32px 20px;
       margin: 8px 0;
       box-sizing: border-box;
     }
@@ -26,7 +26,7 @@ bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQ
       width:600px;
       margin: 20px auto;
       padding: 20px;
-      background-color: #fff,
+      background-color: #fff;
       border-radius: 3px;
       box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
     }
@@ -55,7 +55,8 @@ bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQ
   <div class="item-row">
     <form action="" method="post">
       {% csrf_token %}
-      <input class="btn btn-sm btn-danger" type="submit" name="Confirm">
+      <input class="btn btn-sm btn-danger" type="submit" value="Confirm">
+
     </form>
     <a class="btn btn-sm btn-info" href="{% url 'list' %}">Cancel</a>
   </div>
